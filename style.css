@@ -1,0 +1,755 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+
+:root {
+    --bg-cream: #fffaf5;
+    --brand-dark: #23120b;
+    --accent-orange: #f26522;
+    --text-dark: #2d2019;
+    --text-muted: #7c6e65;
+    --border-light: #f1e6db;
+    --ease-spring: cubic-bezier(0.68, -0.6, 0.32, 1.6);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    /* Apply globally to the entire application */
+    user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+}
+
+html,
+body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+    /* Stops the screen from expanding horizontally */
+    position: relative;
+}
+
+body {
+    background-color: var(--bg-cream);
+    color: var(--text-dark);
+}
+
+/* --- Navigation System --- */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 6%;
+    background: var(--brand-dark);
+    color: #fff;
+    z-index: 1000;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-bowl {
+    font-size: 24px;
+}
+
+.logo h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.tagline {
+    font-size: 8px;
+    letter-spacing: 1.5px;
+    color: #cca43b;
+    display: block;
+    margin-top: -2px;
+}
+
+.cart-icon {
+    background: var(--accent-orange);
+    padding: 8px 20px;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 13px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    box-shadow: 0 4px 10px rgba(242, 101, 34, 0.2);
+
+    /* FIX JITTER: Force Hardware Acceleration layer isolation */
+    transform: translate3d(0, 0, 0);
+    will-change: transform;
+    transition: background 0.3s cubic-bezier(0.25, 1, 0.5, 1), transform 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.cart-icon:hover {
+    background: #fff;
+    color: var(--accent-orange);
+    transform: translate3d(0, -2px, 0);
+    /* Maintained isolation layer on hover */
+}
+
+#cart-count {
+    background: #fff;
+    color: var(--accent-orange);
+    font-size: 10px;
+    padding: 2px 6px;
+    border-radius: 50%;
+    font-weight: 700;
+    display: inline-block;
+    transition: transform 0.2s ease;
+}
+
+/* --- Alert Count Pop Bubble Keyframe Animation --- */
+@keyframes bubblePop {
+    0% {
+        transform: scale(1);
+    }
+
+    45% {
+        transform: scale(1.4);
+        background: #fff;
+        color: #000;
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+#cart-count.pop-alert {
+    animation: bubblePop 0.4s var(--ease-spring);
+}
+
+/* --- Hero Banner System --- */
+.hero-banner {
+    position: relative;
+    margin-top: 55px;
+    background: linear-gradient(90deg, #301407 0%, #441a07 35%, #bf5018 100%);
+    padding: 90px 6% 75px 6%;
+    text-align: center;
+    color: #fff;
+    overflow: hidden;
+}
+
+.pattern-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.03;
+    background-image:
+        linear-gradient(rgba(255, 255, 255, 1) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 1) 1px, transparent 1px);
+    background-size: 20px 20px;
+    pointer-events: none;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-banner h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.2rem;
+    font-weight: 700;
+    line-height: 1.15;
+    margin-bottom: 12px;
+    letter-spacing: -0.5px;
+}
+
+.hero-banner h1 span {
+    color: #cca43b;
+}
+
+.subtext {
+    color: #eedcd0;
+    font-size: 14px;
+    margin-bottom: 35px;
+    font-weight: 400;
+    letter-spacing: 0.2px;
+}
+
+.hero-badges {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.hero-badges span {
+    background: rgba(255, 255, 255, 0.07);
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    padding: 8px 18px;
+    border-radius: 25px;
+    font-size: 12px;
+    color: #f7ece5;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-weight: 500;
+    transition: background 0.2s, transform 0.2s;
+}
+
+.hero-badges span:hover {
+    background: rgba(255, 255, 255, 0.15);
+    transform: scale(1.04);
+}
+
+/* --- Category Segment Filters --- */
+.menu-section {
+    padding: 35px 6%;
+}
+
+.filter-bar {
+    display: flex;
+    justify-content: flex-start;
+    overflow-x: auto;
+    gap: 12px;
+    padding-bottom: 15px;
+    margin-bottom: 35px;
+}
+
+.filter-bar::-webkit-scrollbar {
+    height: 4px;
+}
+
+.filter-bar::-webkit-scrollbar-thumb {
+    background: var(--border-light);
+    border-radius: 10px;
+}
+
+.filter-btn {
+    background: #fff;
+    border: 1px solid var(--border-light);
+    padding: 9px 24px;
+    border-radius: 25px;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--text-muted);
+    cursor: pointer;
+    white-space: nowrap;
+    transition: all 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.filter-btn:hover {
+    transform: translateY(-2px);
+    border-color: var(--accent-orange);
+    color: var(--accent-orange);
+}
+
+.filter-btn.active {
+    background: var(--accent-orange);
+    color: #fff;
+    border-color: var(--accent-orange);
+    box-shadow: 0 4px 12px rgba(242, 101, 34, 0.25);
+    transform: translateY(0) scale(1.02);
+}
+
+.section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.section-title span {
+    color: var(--accent-orange);
+}
+
+/* --- Menu Card Grid & Sequential Entry --- */
+.menu-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.menu-card {
+    background: #fff;
+    border-radius: 18px;
+    overflow: hidden;
+    border: 1px solid var(--border-light);
+    box-shadow: 0 4px 15px rgba(45, 32, 25, 0.01);
+
+    /* Animation implementation properties */
+    opacity: 0;
+    transform: translateY(24px);
+    animation: cardRiseEntry 0.55s cubic-bezier(0.215, 0.61, 0.355, 1) forwards;
+    animation-delay: calc(var(--card-index) * 0.05s);
+    transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), box-shadow 0.4s ease;
+}
+
+@keyframes cardRiseEntry {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.menu-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 24px rgba(35, 18, 11, 0.06);
+}
+
+.card-img-wrapper {
+    height: 190px;
+    position: relative;
+    overflow: hidden;
+}
+
+.card-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.menu-card:hover .card-img-wrapper img {
+    transform: scale(1.06);
+}
+
+.menu-tag {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    background: var(--accent-orange);
+    color: #fff;
+    font-size: 9px;
+    font-weight: 700;
+    padding: 3px 9px;
+    border-radius: 5px;
+    letter-spacing: 0.3px;
+    z-index: 5;
+}
+
+.diet-indicator {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 18px;
+    height: 18px;
+    border: 2px solid;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+    z-index: 5;
+}
+
+.diet-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+}
+
+.card-content {
+    padding: 18px;
+}
+
+.card-content h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 19px;
+    font-weight: 700;
+    margin-bottom: 6px;
+    color: var(--text-dark);
+}
+
+.description {
+    font-size: 12px;
+    color: var(--text-muted);
+    line-height: 1.5;
+    margin-bottom: 12px;
+    height: 36px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+/* --- Chili Spice Indicators --- */
+.spice-row {
+    margin-bottom: 16px;
+    display: flex;
+    gap: 6px;
+    height: 16px;
+    align-items: center;
+}
+
+.chili-icon {
+    font-size: 14px;
+    transition: color 0.2s ease;
+}
+
+.chili-icon.active {
+    color: var(--accent-orange);
+}
+
+.chili-icon.disabled {
+    color: #ebdcd3;
+}
+
+/* --- Card Action Footer Row --- */
+.card-footer-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--text-dark);
+}
+
+.add-to-cart-btn {
+    background: #000;
+    color: #fff;
+    border: none;
+    padding: 7px 18px;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 12px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: all 0.25s ease;
+}
+
+.add-to-cart-btn:hover {
+    background: var(--accent-orange);
+    transform: scale(1.05);
+}
+
+/* --- Flying Image Canvas Clone --- */
+.flying-clone {
+    position: absolute;
+    z-index: 2001;
+    object-fit: cover;
+    border-radius: 50%;
+    pointer-events: none;
+    /* CRITICAL FIX: Stops the browser from calculating scroll margins for this element */
+    contain: layout paint style;
+    max-width: none !important;
+
+    transition: all 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+@keyframes navBump {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.15) translateY(-3px);
+        background: #fff;
+        color: var(--accent-orange);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.bump-cart {
+    animation: navBump 0.4s var(--ease-spring);
+}
+
+/* --- Sidebar Shopping Cart --- */
+.cart-sidebar {
+    position: fixed;
+    top: 0;
+    right: -400px;
+    width: 100%;
+    max-width: 360px;
+    height: 100%;
+    background: #fff;
+    box-shadow: -6px 0 25px rgba(0, 0, 0, 0.05);
+    z-index: 2000;
+    display: flex;
+    flex-direction: column;
+    transition: right 0.45s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.cart-sidebar.active {
+    right: 0;
+}
+
+.cart-header {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--border-light);
+}
+
+.close-cart {
+    cursor: pointer;
+    color: var(--text-muted);
+    transition: color 0.2s;
+}
+
+.close-cart:hover {
+    color: #000;
+}
+
+.cart-items {
+    flex: 1;
+    overflow-y: auto;
+    padding: 20px;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    background: var(--bg-cream);
+    padding: 12px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    font-size: 13px;
+}
+
+.qty-controls button {
+    background: #fff;
+    border: 1px solid var(--border-light);
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.qty-controls button:hover {
+    background: var(--border-light);
+}
+
+.cart-footer {
+    padding: 20px;
+    border-top: 1px solid var(--border-light);
+    background: var(--bg-cream);
+}
+
+.total-container {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.checkout-btn {
+    width: 100%;
+    background: #25D366;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    border-radius: 10px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.checkout-btn:hover {
+    background: #20ba5a;
+}
+
+.sidebar-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 1500;
+    display: none;
+}
+
+.sidebar-overlay.active {
+    display: block;
+}
+
+.loader,
+.error-msg {
+    text-align: center;
+    padding: 30px;
+    color: var(--text-muted);
+    grid-column: 1/-1;
+    font-size: 13px;
+}
+
+/* --- Site Footer Styling --- */
+.site-footer {
+    background-color: var(--brand-dark);
+    color: #eedcd0;
+    padding: 30px 6%;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 500;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    margin-top: 60px;
+}
+
+/* --- Animated Floating Go-Up Button --- */
+.scroll-top-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: var(--accent-orange);
+    color: #fff;
+    border: none;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    box-shadow: 0 4px 15px rgba(242, 101, 34, 0.4);
+    z-index: 999;
+
+    /* FIX JITTER: Maintain Layer Separation */
+    will-change: transform, opacity, visibility;
+    opacity: 0;
+    visibility: hidden;
+    transform: translate3d(0, 20px, 0) scale(0.8);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/* Active class triggered via JavaScript on scroll */
+.scroll-top-btn.visible {
+    opacity: 1;
+    visibility: visible;
+    transform: translate3d(0, 0, 0) scale(1);
+}
+
+.scroll-top-btn:hover {
+    background-color: #fff;
+    color: var(--accent-orange);
+    transform: translate3d(0, -5px, 0) scale(1.05);
+    box-shadow: 0 6px 20px rgba(242, 101, 34, 0.6);
+}
+
+/* --- Responsive Layout Breaks --- */
+@media screen and (max-width: 768px) {
+    .hero-banner {
+        padding: 40px 4% 35px 4%;
+    }
+
+    .hero-banner h1 {
+        font-size: 2.1rem;
+        line-height: 1.2;
+        margin-bottom: 8px;
+    }
+
+    .subtext {
+        font-size: 12px;
+        margin-bottom: 20px;
+    }
+
+    .hero-badges {
+        gap: 8px;
+    }
+
+    .hero-badges span {
+        padding: 5px 12px;
+        font-size: 11px;
+    }
+
+    .menu-section {
+        padding: 20px 4%;
+    }
+
+    .scroll-top-btn {
+        bottom: 20px;
+        right: 20px;
+        width: 40px;
+        height: 40px;
+        font-size: 14px;
+    }
+
+    .site-footer {
+        padding: 25px 4%;
+        font-size: 11px;
+        line-height: 1.5;
+    }
+}
+
+/* --- Sidebar Dynamic Total Breakdowns --- */
+.summary-row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    color: var(--text-muted);
+    margin-bottom: 6px;
+}
+
+.grand-total-row {
+    font-size: 16px;
+    color: var(--text-dark);
+    margin-top: 8px;
+    margin-bottom: 0;
+}
+
+.summary-divider {
+    border: none;
+    border-top: 1px dashed var(--border-light);
+    margin: 10px 0;
+}
+
+/* --- Inline Card Quantity Adjustment Controls --- */
+.menu-qty-controls {
+    display: flex;
+    align-items: center;
+    background-color: #000;
+    border-radius: 20px;
+    padding: 3px 5px;
+    gap: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.menu-qty-btn {
+    background: transparent;
+    border: none;
+    color: #fff;
+    width: 28px;
+    height: 28px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: background-color 0.2s ease;
+}
+
+.menu-qty-btn:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+.menu-qty-btn.increase {
+    color: var(--accent-orange); /* Highlights addition option action */
+}
+
+.menu-qty-display {
+    color: #fff;
+    font-size: 13px;
+    font-weight: 700;
+    min-width: 14px;
+    text-align: center;
+}

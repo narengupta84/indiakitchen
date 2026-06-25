@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>India Kitchen | Authentic Indian Flavours</title>
+    <link rel="icon" type="image/png" href="https://img.icons8.com/fluency/48/cooking-pot.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+        <div class="logo">
+            <div class="logo-bowl">🍲</div>
+            <div>
+                <h2>India Kitchen</h2>
+                <span class="tagline">AUTHENTIC INDIAN FLAVOURS</span>
+            </div>
+        </div>
+        <div class="cart-icon" id="cart-nav-btn" onclick="toggleCart()">
+            <i class="fas fa-shopping-bag"></i> Cart
+            <span id="cart-count">0</span>
+        </div>
+    </header>
+
+    <section class="hero-banner">
+        <div class="pattern-overlay"></div>
+        <div class="hero-content">
+            <h1>Experience the <span>Ghar Ka Swad</span> <br>of India</h1>
+            <p class="subtext">Ghar Ka Swad • Fresh ingredients • Delivered hot</p>
+            <div class="hero-badges">
+                <span>🌿 Veg & Non-Veg Options</span>
+                <span>🔥 Freshly Cooked</span>
+                <span>📱 Order via WhatsApp</span>
+                <span>⚡ Fast Delivery</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="menu-section">
+        <div class="filter-bar">
+            <button class="filter-btn active" onclick="filterMenu('all', this)">All</button>
+            <button class="filter-btn" onclick="filterMenu('starters', this)">Starters</button>
+            <button class="filter-btn" onclick="filterMenu('main-course', this)">Main Course</button>
+            <button class="filter-btn" onclick="filterMenu('breads', this)">Breads</button>
+            <button class="filter-btn" onclick="filterMenu('desserts', this)">Desserts</button>
+            <button class="filter-btn" onclick="filterMenu('drinks', this)">Drinks</button>
+        </div>
+
+        <h2 class="section-title">Our <span>Menu</span></h2>
+
+        <div class="menu-container" id="menu-grid">
+            <div class="loader">Loading our authentic spices...</div>
+        </div>
+    </section>
+
+    <div class="cart-sidebar" id="cart-sidebar">
+        <div class="cart-header">
+            <h3>Your Order</h3>
+            <i class="fas fa-times close-cart" onclick="toggleCart()"></i>
+        </div>
+        <div class="cart-items" id="cart-items-container">
+            <p class="empty-msg">Your cart is empty.</p>
+        </div>
+        <div class="cart-footer">
+            <div class="total-container">
+                <span>Total Amount:</span>
+                <span id="cart-total">₹0</span>
+            </div>
+            <button class="checkout-btn" onclick="sendWhatsAppOrder()">
+                <i class="fab fa-whatsapp"></i> Place Order via WhatsApp
+            </button>
+        </div>
+    </div>
+    <div class="sidebar-overlay" id="sidebar-overlay" onclick="toggleCart()"></div>
+    <footer class="site-footer">
+        <p>Made with ❤️ by <a href="https://narendragupta.com" target="_blank" rel="noopener noreferrer">Narendra</a> | Order via WhatsApp for the freshest experience</p>
+    </footer>
+
+    <button class="scroll-top-btn" id="scrollTopBtn" onclick="scrollToTop()" title="Go to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    <script src="app.js"></script>
+</body>
+
+</html>
