@@ -43,13 +43,8 @@
     </section>
 
     <section class="menu-section">
-        <div class="filter-bar">
-            <button class="filter-btn active" onclick="filterMenu('all', this)">All</button>
-            <button class="filter-btn" onclick="filterMenu('starters', this)">Starters</button>
-            <button class="filter-btn" onclick="filterMenu('main-course', this)">Main Course</button>
-            <button class="filter-btn" onclick="filterMenu('breads', this)">Breads</button>
-            <button class="filter-btn" onclick="filterMenu('desserts', this)">Desserts</button>
-            <button class="filter-btn" onclick="filterMenu('drinks', this)">Drinks</button>
+        <div class="filter-bar" id="filter-bar">
+            <!-- Filter buttons will be generated dynamically from menu.json -->
         </div>
 
         <h2 class="section-title">Our <span>Menu</span></h2>
@@ -58,6 +53,59 @@
             <div class="loader">Loading our authentic spices...</div>
         </div>
     </section>
+
+    <script>
+        // Generate filter buttons from menu.json categories
+        function generateFilterButtons() {
+            fetch('menu.json')
+                .then(response => response.json())
+                .then(menuData => {
+                    // Extract unique categories
+                    const categories = [...new Set(menuData.map(item => item.category))];
+                    
+                    // Capitalize first letter of each category
+                    const formattedCategories = categories.map(category => {
+                        return category.charAt(0).toUpperCase() + category.slice(1);
+                    });
+                    
+                    // Add 'All' button at the beginning
+                    formattedCategories.unshift('All');
+                    
+                    // Generate HTML for filter buttons
+                    const filterBar = document.getElementById('filter-bar');
+                    filterBar.innerHTML = '';
+                    
+                    formattedCategories.forEach((category, index) => {
+                        const button = document.createElement('button');
+                        button.className = 'filter-btn';
+                        if (index === 0) {
+                            button.classList.add('active');
+                        }
+                        button.onclick = function() {
+                            filterMenu(category.toLowerCase().replace(' ', '-'), this);
+                        };
+                        button.textContent = category;
+                        filterBar.appendChild(button);
+                    });
+                })
+                .catch(error => {
+                    console.error('Error loading menu.json:', error);
+                    // Fallback to default buttons if menu.json fails to load
+                    const filterBar = document.getElementById('filter-bar');
+                    filterBar.innerHTML = `
+                        <button class="filter-btn active" onclick="filterMenu('all', this)">All</button>
+                        <button class="filter-btn" onclick="filterMenu('starters', this)">Starters</button>
+                        <button class="filter-btn" onclick="filterMenu('main-course', this)">Main Course</button>
+                        <button class="filter-btn" onclick="filterMenu('breads', this)">Breads</button>
+                        <button class="filter-btn" onclick="filterMenu('desserts', this)">Desserts</button>
+                        <button class="filter-btn" onclick="filterMenu('drinks', this)">Drinks</button>
+                    `;
+                });
+        }
+        
+        // Initialize filter buttons when DOM is loaded
+        document.addEventListener('DOMContentLoaded', generateFilterButtons);
+    </script>
 
     <div class="cart-sidebar" id="cart-sidebar">
         <div class="cart-header">
