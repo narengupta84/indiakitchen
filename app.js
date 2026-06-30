@@ -2,7 +2,8 @@ const GLOBAL_CONFIG = {
     whatsappNumber: "66866110121",
     currencySymbol: "฿",
     shopName: "India Kitchen",
-    vat: 0 // Set VAT percentage here (e.g., 7 for 7%). Set to 0 to hide completely.
+    vat: 0, // Set VAT percentage here (e.g., 7 for 7%). Set to 0 to hide completely.
+    customerInfo: true // Set to true to show customer info fields in the WhatsApp message. Set to false to hide.
 };
 
 const WHATSAPP_NUMBER = GLOBAL_CONFIG.whatsappNumber;
@@ -209,6 +210,7 @@ function updateCartUI() {
     const container = document.getElementById('cart-items-container');
     const totalCount = document.getElementById('cart-count');
     const totalAmount = document.getElementById('cart-total');
+    const customerInfoContainer = document.getElementById('customer-info-container');
     
     container.innerHTML = '';
     let totalItems = 0, subtotalPrice = 0;
@@ -217,6 +219,11 @@ function updateCartUI() {
         container.innerHTML = `<p class="empty-msg">Your cart is empty.</p>`;
         totalCount.innerText = "0";
         totalAmount.innerHTML = `<span>Total Amount:</span><span>${GLOBAL_CONFIG.currencySymbol}0</span>`;
+        
+        // Hide customer info container when cart is empty
+        if (customerInfoContainer) {
+            customerInfoContainer.style.display = 'none';
+        }
         return;
     }
 
@@ -261,6 +268,15 @@ function updateCartUI() {
     `;
 
     totalAmount.parentElement.innerHTML = `<div id="cart-total" style="width: 100%;">${finalHTML}</div>`;
+    
+    // Show/hide customer info container based on GLOBAL_CONFIG.customerInfo
+    if (customerInfoContainer) {
+        if (GLOBAL_CONFIG.customerInfo) {
+            customerInfoContainer.style.display = 'block';
+        } else {
+            customerInfoContainer.style.display = 'none';
+        }
+    }
 }
 
 function toggleCart() {
@@ -269,7 +285,95 @@ function toggleCart() {
 }
 
 function sendWhatsAppOrder() {
-    if (cart.length === 0) return alert("Your cart is empty!");
+    // Use SweetAlert2 for modern, fancy alerts
+    if (cart.length === 0) {
+        // Close cart sidebar before showing SweetAlert to prevent z-index conflicts
+        document.getElementById('cart-sidebar').classList.remove('active');
+        document.getElementById('sidebar-overlay').classList.remove('active');
+        
+        Swal.fire({
+            title: 'Your cart is empty!',
+            text: 'Please add some items to your cart before placing an order.',
+            icon: 'warning',
+            confirmButtonText: 'OK',
+            confirmButtonColor: '#f26522',
+            background: '#fffaf5',
+            customClass: {
+                popup: 'modern-swal-popup',
+                title: 'modern-swal-title',
+                content: 'modern-swal-content',
+                confirmButton: 'modern-swal-confirm-btn'
+            },
+            willClose: () => {
+                // Re-open cart sidebar when SweetAlert closes
+                document.getElementById('cart-sidebar').classList.add('active');
+                document.getElementById('sidebar-overlay').classList.add('active');
+            }
+        });
+        return;
+    }
+    
+    // Get customer info from form fields
+    const customerName = document.getElementById('customer-name');
+    const customerAddress = document.getElementById('customer-address');
+    
+    // Validate customer info fields
+    if (!customerName || !customerAddress) {
+        // Close cart sidebar before showing SweetAlert to prevent z-index conflicts
+        document.getElementById('cart-sidebar').classList.remove('active');
+        document.getElementById('sidebar-overlay').classList.remove('active');
+        
+        Swal.fire({
+            title: 'Error!',
+            text: 'Customer info fields not found. Please refresh the page.',
+            icon: 'error',
+            confirmButtonText: 'OK',
+            confirmButtonColor: '#f26522',
+            background: '#fffaf5',
+            customClass: {
+                popup: 'modern-swal-popup',
+                title: 'modern-swal-title',
+                content: 'modern-swal-content',
+                confirmButton: 'modern-swal-confirm-btn'
+            },
+            willClose: () => {
+                // Re-open cart sidebar when SweetAlert closes
+                document.getElementById('cart-sidebar').classList.add('active');
+                document.getElementById('sidebar-overlay').classList.add('active');
+            }
+        });
+        return;
+    }
+    
+    const nameValue = customerName.value.trim();
+    const addressValue = customerAddress.value.trim();
+    
+    if (!nameValue || !addressValue) {
+        // Close cart sidebar before showing SweetAlert to prevent z-index conflicts
+        document.getElementById('cart-sidebar').classList.remove('active');
+        document.getElementById('sidebar-overlay').classList.remove('active');
+        
+        Swal.fire({
+            title: 'Validation Required',
+            text: 'Please fill in both Name and Delivery Address fields before placing your order.',
+            icon: 'info',
+            confirmButtonText: 'OK',
+            confirmButtonColor: '#f26522',
+            background: '#fffaf5',
+            customClass: {
+                popup: 'modern-swal-popup',
+                title: 'modern-swal-title',
+                content: 'modern-swal-content',
+                confirmButton: 'modern-swal-confirm-btn'
+            },
+            willClose: () => {
+                // Re-open cart sidebar when SweetAlert closes
+                document.getElementById('cart-sidebar').classList.add('active');
+                document.getElementById('sidebar-overlay').classList.add('active');
+            }
+        });
+        return;
+    }
     
     let message = `*✨ New Order from ${GLOBAL_CONFIG.shopName}! ✨*\n\n`;
     let subtotal = 0;
@@ -294,7 +398,12 @@ function sendWhatsAppOrder() {
         message += `💰 *Total Bill:* ${GLOBAL_CONFIG.currencySymbol}${subtotal.toFixed(2)}\n`;
     }
     
-    message += `---------------------------\n\nPlease confirm and process my order!`;
+    // Add customer info to message
+    message += `👤 *Customer Name:* ${nameValue}\n`;
+    message += `📍 *Delivery Address:* ${addressValue}\n`;
+    message += `---------------------------\n`;
+    
+    message += `\nPlease confirm and process my order!`;
 
     window.open(`https://api.whatsapp.com/send?phone=${WHATSAPP_NUMBER}&text=${encodeURIComponent(message)}`, '_blank');
 }
