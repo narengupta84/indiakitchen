@@ -9,7 +9,8 @@ const GLOBAL_CONFIG = {
 const WHATSAPP_NUMBER = GLOBAL_CONFIG.whatsappNumber;
 let menuData = [];
 let cart = [];
-let currentCategory = 'all'; 
+let currentCategory = 'all';
+let currentType = 'both';
 
 function initApp() {
     const navTitle = document.getElementById('nav-shop-name');
@@ -54,18 +55,20 @@ function renderMenu(items) {
 
         const cartItem = cart.find(c => c.id === item.id);
         const currentQty = cartItem ? cartItem.quantity : 0;
+        const imageHtml = item.image ? `<img id="img-target-${item.id}" src="${item.image}" alt="${item.name}">` : '';
+        const imageWrapperClass = item.image ? 'card-img-wrapper' : 'card-img-wrapper no-image';
 
         const card = document.createElement('div');
         card.className = 'menu-card';
         card.style.setProperty('--card-index', index);
         
         card.innerHTML = `
-            <div class="card-img-wrapper">
+            <div class="${imageWrapperClass}">
                 <span class="menu-tag">${item.tag}</span>
                 <div class="diet-indicator" style="border-color: ${typeColor}">
                     <div class="diet-dot" style="background-color: ${typeColor}"></div>
                 </div>
-                <img id="img-target-${item.id}" src="${item.image}" alt="${item.name}">
+                ${imageHtml}
             </div>
             <div class="card-content">
                 <h3>${item.name}</h3>
@@ -114,15 +117,27 @@ function updateMenuCardButtonDOM(id, quantity) {
 function filterMenu(category, btnElement) {
     currentCategory = category;
     document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-    btnElement.classList.add('active');
-    
-    // When switching top categories, a full grid refresh is expected and necessary
-    if (currentCategory === 'all') {
-        renderMenu(menuData);
-    } else {
-        const filtered = menuData.filter(item => item.category === currentCategory);
-        renderMenu(filtered);
+    if (btnElement) btnElement.classList.add('active');
+    applyMenuFilters();
+}
+
+function filterType(type) {
+    currentType = type;
+    applyMenuFilters();
+}
+
+function applyMenuFilters() {
+    let filtered = menuData;
+
+    if (currentCategory !== 'all') {
+        filtered = filtered.filter(item => item.category === currentCategory);
     }
+
+    if (currentType !== 'both') {
+        filtered = filtered.filter(item => item.type === currentType);
+    }
+
+    renderMenu(filtered);
 }
 
 // Flying Parabolic Clone Animation

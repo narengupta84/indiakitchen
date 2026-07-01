@@ -44,10 +44,20 @@
 
     <section class="menu-section">
         <div class="filter-bar" id="filter-bar">
-            <!-- Filter buttons will be generated dynamically from menu.json -->
+            <!-- Category filter buttons will be generated dynamically from menu.json -->
         </div>
 
-        <h2 class="section-title">Our <span>Menu</span></h2>
+        <div class="section-heading">
+            <h2 class="section-title">Our <span>Menu</span></h2>
+            <div class="type-dropdown">
+                <label for="diet-select"></label>
+                <select id="diet-select" onchange="filterType(this.value)">
+                    <option value="both">Both</option>
+                    <option value="veg">Veg</option>
+                    <option value="non-veg">Non-Veg</option>
+                </select>
+            </div>
+        </div>
 
         <div class="menu-container" id="menu-grid">
             <div class="loader">Loading our authentic spices...</div>

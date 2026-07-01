@@ -6,9 +6,9 @@
     "tag": "POPULAR",
     "type": "veg",
     "spice": 1,
-    "description": "Authentic Indian roti freshly prepared with traditional spices.",
+    "description": "Soft, hand-rolled whole wheat flatbread cooked fresh on a hot tawa. The everyday staple that pairs perfectly with any curry or dal.",
     "price": 12,
-    "image": "https://images.unsplash.com/photo-1668357530437-72a12c660f94"
+    "image": ""
   },
   {
     "id": 2,
@@ -17,9 +17,9 @@
     "tag": "POPULAR",
     "type": "veg",
     "spice": 1,
-    "description": "Authentic Indian butter roti freshly prepared with traditional spices.",
+    "description": "Our classic roti brushed generously with melted butter right off the tawa, adding a rich, glossy finish and a touch of indulgence.",
     "price": 18,
-    "image": "https://images.unsplash.com/photo-1668357530437-72a12c660f94"
+    "image": ""
   },
   {
     "id": 3,
@@ -28,9 +28,9 @@
     "tag": "POPULAR",
     "type": "veg",
     "spice": 1,
-    "description": "Authentic Indian roti with ghee freshly prepared with traditional spices.",
+    "description": "Hand-rolled whole wheat roti finished with a generous drizzle of pure ghee, giving it a nutty aroma and irresistibly soft texture.",
     "price": 18,
-    "image": "https://images.unsplash.com/photo-1668357530437-72a12c660f94"
+    "image": ""
   },
   {
     "id": 4,
@@ -39,9 +39,9 @@
     "tag": "POPULAR",
     "type": "veg",
     "spice": 1,
-    "description": "Authentic Indian puri (10pc) freshly prepared with traditional spices.",
+    "description": "Ten pillowy, deep-fried whole wheat puris that puff up golden and crisp - a beloved breakfast and festive favorite.",
     "price": 80,
-    "image": "https://images.unsplash.com/photo-1668357530437-72a12c660f94"
+    "image": ""
   },
   {
     "id": 5,
@@ -50,9 +50,9 @@
     "tag": "POPULAR",
     "type": "veg",
     "spice": 1,
-    "description": "Authentic Indian plain paratha freshly prepared with traditional spices.",
+    "description": "Layered, pan-fried whole wheat flatbread with a flaky, buttery texture - simple, comforting, and endlessly versatile.",
     "price": 18,
-    "image": "https://images.unsplash.com/photo-1668357530437-72a12c660f94"
+    "image": ""
   },
   {
     "id": 6,
@@ -61,9 +61,9 @@
     "tag": "POPULAR",
     "type": "veg",
     "spice": 1,
-    "description": "Authentic Indian plain naan freshly prepared with traditional spices.",
+    "description": "Classic leavened flatbread baked in a tandoor until lightly charred and pillowy soft, straight from the clay oven.",
     "price": 30,
-    "image": "https://images.unsplash.com/photo-1668357530437-72a12c660f94"
+    "image": ""
   },
   {
     "id": 7,
@@ -72,9 +72,9 @@
     "tag": "POPULAR",
     "type": "veg",
     "spice": 1,
-    "description": "Authentic Indian butter naan freshly prepared with traditional spices.",
+    "description": "Tandoor-baked naan brushed with melted butter as it comes off the fire, delivering a soft, rich bite in every piece.",
     "price": 40,
-    "image": "https://images.unsplash.com/photo-1668357530437-72a12c660f94"
+    "image": ""
   },
   {
     "id": 8,
@@ -83,9 +83,9 @@
     "tag": "POPULAR",
     "type": "veg",
     "spice": 1,
-    "description": "Authentic Indian lachha paratha (2pc) freshly prepared with traditional spices.",
+    "description": "Two flaky, multi-layered parathas with a crisp, crumbly texture achieved through traditional folding and roasting on the tawa.",
     "price": 80,
-    "image": "https://images.unsplash.com/photo-1668357530437-72a12c660f94"
+    "image": ""
   },
   {
     "id": 9,
@@ -94,9 +94,9 @@
     "tag": "POPULAR",
     "type": "veg",
     "spice": 1,
-    "description": "Authentic Indian aloo paratha (2pc) freshly prepared with traditional spices.",
+    "description": "Two parathas stuffed with a spiced mashed potato filling, pan-roasted until golden and crisp on the outside.",
     "price": 80,
-    "image": "https://images.unsplash.com/photo-1668357530437-72a12c660f94"
+    "image": ""
   },
   {
     "id": 10,
@@ -105,9 +105,9 @@
     "tag": "POPULAR",
     "type": "veg",
     "spice": 1,
-    "description": "Authentic Indian paneer paratha (2pc) freshly prepared with traditional spices.",
+    "description": "Two parathas generously filled with soft, crumbled paneer and mild spices, griddle-cooked to a golden crust.",
     "price": 100,
-    "image": "https://images.unsplash.com/photo-1668357530437-72a12c660f94"
+    "image": ""
   },
   {
     "id": 11,
@@ -116,9 +116,9 @@
     "tag": "POPULAR",
     "type": "veg",
     "spice": 1,
-    "description": "Authentic Indian gobhi paratha (2pc) freshly prepared with traditional spices.",
+    "description": "Two whole wheat parathas stuffed with lightly spiced grated cauliflower, rolled thin and pan-fried until crisp.",
     "price": 100,
-    "image": "https://images.unsplash.com/photo-1668357530437-72a12c660f94"
+    "image": ""
   },
   {
     "id": 12,
@@ -127,9 +127,9 @@
     "tag": "POPULAR",
     "type": "veg",
     "spice": 1,
-    "description": "Authentic Indian mutter paratha (2pc) freshly prepared with traditional spices.",
+    "description": "Two parathas filled with a mildly spiced, mashed green pea stuffing, rolled and roasted for a warm, earthy bite.",
     "price": 100,
-    "image": "https://images.unsplash.com/photo-1668357530437-72a12c660f94"
+    "image": ""
   },
   {
     "id": 13,
@@ -138,9 +138,9 @@
     "tag": "POPULAR",
     "type": "veg",
     "spice": 1,
-    "description": "Authentic Indian mix veg freshly prepared with traditional spices.",
+    "description": "A colorful medley of seasonal vegetables simmered together in a light, home-style masala with everyday Indian spices.",
     "price": 110,
-    "image": "https://images.unsplash.com/photo-1631452180519-c014fe946bc7"
+    "image": ""
   },
   {
     "id": 14,
@@ -149,9 +149,9 @@
     "tag": "POPULAR",
     "type": "veg",
     "spice": 1,
-    "description": "Authentic Indian dry veg freshly prepared with traditional spices.",
+    "description": "Mixed vegetables sauteed with minimal gravy in a dry masala, letting the natural flavors and light spicing shine through.",
     "price": 110,
-    "image": "https://images.unsplash.com/photo-1631452180519-c014fe946bc7"
+    "image": ""
   },
   {
     "id": 15,
@@ -160,9 +160,9 @@
     "tag": "POPULAR",
     "type": "veg",
     "spice": 1,
-    "description": "Authentic Indian daal fry freshly prepared with traditional spices.",
+    "description": "Yellow lentils simmered until tender, then finished with a sizzling tempering of cumin, garlic, and ghee.",
     "price": 90,
-    "image": "https://images.unsplash.com/photo-1631452180519-c014fe946bc7"
+    "image": ""
   },
   {
     "id": 16,
@@ -171,9 +171,9 @@
     "tag": "POPULAR",
     "type": "veg",
     "spice": 1,
-    "description": "Authentic Indian mix daal freshly prepared with traditional spices.",
+    "description": "A hearty blend of three lentils slow-cooked together for a rich, layered flavor and creamy, comforting texture.",
     "price": 120,
-    "image": "https://images.unsplash.com/photo-1631452180519-c014fe946bc7"
+    "image": ""
   },
   {
     "id": 17,
@@ -182,9 +182,9 @@
     "tag": "POPULAR",
     "type": "veg",
     "spice": 1,
-    "description": "Authentic Indian chole freshly prepared with traditional spices.",
+    "description": "Tender chickpeas simmered in a tangy, spiced tomato-onion gravy - a North Indian favorite best enjoyed with bhature or rice.",
     "price": 110,
-    "image": "https://images.unsplash.com/photo-1642821372719-46b426afd8b1"
+    "image": ""
   },
   {
     "id": 18,
@@ -193,9 +193,9 @@
     "tag": "POPULAR",
     "type": "veg",
     "spice": 1,
-    "description": "Authentic Indian rajma freshly prepared with traditional spices.",
+    "description": "Whole red kidney beans slow-cooked in a thick, aromatic onion-tomato curry, a Punjabi kitchen classic.",
     "price": 110,
-    "image": "https://images.unsplash.com/photo-1546833999-b9f581a1996d"
+    "image": ""
   },
   {
     "id": 19,
@@ -204,9 +204,9 @@
     "tag": "POPULAR",
     "type": "veg",
     "spice": 1,
-    "description": "Authentic Indian bhindi masala freshly prepared with traditional spices.",
+    "description": "Fresh okra pan-fried with onions and a blend of dry spices until lightly crisp and full of flavor.",
     "price": 110,
-    "image": "https://images.unsplash.com/photo-1631452180519-c014fe946bc7"
+    "image": ""
   },
   {
     "id": 20,
@@ -215,9 +215,9 @@
     "tag": "POPULAR",
     "type": "veg",
     "spice": 1,
-    "description": "Authentic Indian matar paneer freshly prepared with traditional spices.",
+    "description": "Cubes of soft paneer simmered with green peas in a light, spiced tomato-based curry.",
     "price": 160,
-    "image": "https://images.unsplash.com/photo-1631452180519-c014fe946bc7"
+    "image": ""
   },
   {
     "id": 21,
@@ -226,9 +226,9 @@
     "tag": "POPULAR",
     "type": "veg",
     "spice": 1,
-    "description": "Authentic Indian paneer butter masala freshly prepared with traditional spices.",
+    "description": "Paneer cubes in a velvety, buttery tomato-cashew gravy with a hint of sweetness and mild spice - a restaurant favorite.",
     "price": 200,
-    "image": "https://images.unsplash.com/photo-1631452180519-c014fe946bc7"
+    "image": ""
   },
   {
     "id": 22,
@@ -237,9 +237,9 @@
     "tag": "POPULAR",
     "type": "veg",
     "spice": 1,
-    "description": "Authentic Indian palak paneer freshly prepared with traditional spices.",
+    "description": "Soft paneer cubes folded into a smooth, pureed spinach curry seasoned with garlic and warm spices.",
     "price": 180,
-    "image": "https://images.unsplash.com/photo-1767114915936-745dd372f1d8"
+    "image": ""
   },
   {
     "id": 23,
@@ -248,9 +248,9 @@
     "tag": "POPULAR",
     "type": "veg",
     "spice": 1,
-    "description": "Authentic Indian besan curry freshly prepared with traditional spices.",
+    "description": "Gram flour simmered in a tangy, spiced yogurt-based curry until it forms soft, tender dumplings.",
     "price": 110,
-    "image": "https://images.unsplash.com/photo-1631452180519-c014fe946bc7"
+    "image": ""
   },
   {
     "id": 24,
@@ -259,9 +259,9 @@
     "tag": "POPULAR",
     "type": "veg",
     "spice": 1,
-    "description": "Authentic Indian aloo gobhi freshly prepared with traditional spices.",
+    "description": "Potatoes and cauliflower florets sauteed together with turmeric and everyday spices for a simple, homely dry curry.",
     "price": 110,
-    "image": "https://images.unsplash.com/photo-1631452180519-c014fe946bc7"
+    "image": ""
   },
   {
     "id": 25,
@@ -270,9 +270,9 @@
     "tag": "POPULAR",
     "type": "veg",
     "spice": 1,
-    "description": "Authentic Indian aloo jeera freshly prepared with traditional spices.",
+    "description": "Diced potatoes tempered with roasted cumin seeds and light spices for a fragrant, comforting dry sabzi.",
     "price": 110,
-    "image": "https://images.unsplash.com/photo-1631452180519-c014fe946bc7"
+    "image": ""
   },
   {
     "id": 26,
@@ -281,9 +281,9 @@
     "tag": "POPULAR",
     "type": "veg",
     "spice": 1,
-    "description": "Authentic Indian aloo matar freshly prepared with traditional spices.",
+    "description": "Soft potato cubes and green peas simmered in a light, tomato-based gravy with everyday household spices.",
     "price": 110,
-    "image": "https://images.unsplash.com/photo-1631452180519-c014fe946bc7"
+    "image": ""
   },
   {
     "id": 27,
@@ -292,9 +292,9 @@
     "tag": "POPULAR",
     "type": "veg",
     "spice": 1,
-    "description": "Authentic Indian plain rice freshly prepared with traditional spices.",
+    "description": "Fluffy steamed basmati rice, cooked simple and plain to pair perfectly with any curry or dal of your choice.",
     "price": 50,
-    "image": "https://images.unsplash.com/photo-1589302168068-964664d93dc0"
+    "image": ""
   },
   {
     "id": 28,
@@ -303,9 +303,9 @@
     "tag": "POPULAR",
     "type": "veg",
     "spice": 1,
-    "description": "Authentic Indian jeera rice freshly prepared with traditional spices.",
+    "description": "Basmati rice tempered with roasted cumin seeds and a touch of ghee for a fragrant, subtly spiced side.",
     "price": 80,
-    "image": "https://images.unsplash.com/photo-1589302168068-964664d93dc0"
+    "image": ""
   },
   {
     "id": 29,
@@ -314,9 +314,9 @@
     "tag": "POPULAR",
     "type": "veg",
     "spice": 1,
-    "description": "Authentic Indian matar pulao freshly prepared with traditional spices.",
+    "description": "Basmati rice cooked with green peas, whole spices, and a light tempering for a fragrant one-pot favorite.",
     "price": 110,
-    "image": "https://images.unsplash.com/photo-1589302168068-964664d93dc0"
+    "image": ""
   },
   {
     "id": 30,
@@ -325,9 +325,9 @@
     "tag": "POPULAR",
     "type": "veg",
     "spice": 1,
-    "description": "Authentic Indian khichdi freshly prepared with traditional spices.",
+    "description": "A comforting one-pot blend of rice and lentils, slow-cooked with turmeric and mild spices until soft and porridge-like.",
     "price": 120,
-    "image": "https://images.unsplash.com/photo-1589302168068-964664d93dc0"
+    "image": ""
   },
   {
     "id": 31,
@@ -336,9 +336,9 @@
     "tag": "POPULAR",
     "type": "veg",
     "spice": 1,
-    "description": "Authentic Indian veg fried rice freshly prepared with traditional spices.",
+    "description": "Wok-tossed rice with mixed vegetables and light soy seasoning, a popular Indo-Chinese favorite.",
     "price": 120,
-    "image": "https://images.unsplash.com/photo-1589302168068-964664d93dc0"
+    "image": ""
   },
   {
     "id": 32,
@@ -347,9 +347,9 @@
     "tag": "POPULAR",
     "type": "non-veg",
     "spice": 2,
-    "description": "Authentic Indian egg fried rice freshly prepared with traditional spices.",
+    "description": "Wok-tossed rice with scrambled egg and mixed vegetables, seasoned with a light Indo-Chinese touch.",
     "price": 120,
-    "image": "https://images.unsplash.com/photo-1589302168068-964664d93dc0"
+    "image": ""
   },
   {
     "id": 33,
@@ -358,9 +358,9 @@
     "tag": "POPULAR",
     "type": "non-veg",
     "spice": 2,
-    "description": "Authentic Indian chicken fried rice freshly prepared with traditional spices.",
+    "description": "Wok-tossed rice with tender chicken pieces and vegetables, finished with a savory Indo-Chinese seasoning.",
     "price": 140,
-    "image": "https://images.unsplash.com/photo-1589302168068-964664d93dc0"
+    "image": ""
   },
   {
     "id": 34,
@@ -369,9 +369,9 @@
     "tag": "POPULAR",
     "type": "non-veg",
     "spice": 2,
-    "description": "Authentic Indian egg curry freshly prepared with traditional spices.",
+    "description": "Boiled eggs simmered in a spiced onion-tomato gravy with warm masalas - a comforting everyday non-veg curry.",
     "price": 140,
-    "image": "https://images.unsplash.com/photo-1603894584373-5ac82b2ae398"
+    "image": ""
   },
   {
     "id": 35,
@@ -380,9 +380,9 @@
     "tag": "POPULAR",
     "type": "non-veg",
     "spice": 2,
-    "description": "Authentic Indian egg bhurji freshly prepared with traditional spices.",
+    "description": "Eggs scrambled with onions, tomatoes, and green chilies for a quick, spiced, homestyle breakfast favorite.",
     "price": 80,
-    "image": "https://images.unsplash.com/photo-1603894584373-5ac82b2ae398"
+    "image": ""
   },
   {
     "id": 36,
@@ -391,9 +391,9 @@
     "tag": "POPULAR",
     "type": "non-veg",
     "spice": 2,
-    "description": "Authentic Indian omlette freshly prepared with traditional spices.",
+    "description": "A simple pan-fried omelette made with beaten eggs, onions, and green chilies.",
     "price": 60,
-    "image": "https://images.unsplash.com/photo-1603894584373-5ac82b2ae398"
+    "image": ""
   },
   {
     "id": 37,
@@ -402,9 +402,9 @@
     "tag": "POPULAR",
     "type": "non-veg",
     "spice": 2,
-    "description": "Authentic Indian chicken curry freshly prepared with traditional spices.",
+    "description": "Tender chicken pieces simmered in a spiced onion-tomato gravy, rich with classic Indian masalas.",
     "price": 160,
-    "image": "https://images.unsplash.com/photo-1603894584373-5ac82b2ae398"
+    "image": ""
   },
   {
     "id": 38,
@@ -413,9 +413,9 @@
     "tag": "POPULAR",
     "type": "non-veg",
     "spice": 2,
-    "description": "Authentic Indian butter chicken freshly prepared with traditional spices.",
+    "description": "Tandoor-cooked chicken simmered in a creamy, buttery tomato gravy with a mild, comforting sweetness - a timeless classic.",
     "price": 200,
-    "image": "https://images.unsplash.com/photo-1603894584373-5ac82b2ae398"
+    "image": ""
   },
   {
     "id": 39,
@@ -424,9 +424,9 @@
     "tag": "POPULAR",
     "type": "non-veg",
     "spice": 2,
-    "description": "Authentic Indian chicken pakoda freshly prepared with traditional spices.",
+    "description": "Bite-sized chicken pieces marinated in spices, dipped in gram flour batter, and deep-fried until crisp.",
     "price": 140,
-    "image": "https://images.unsplash.com/photo-1603894584373-5ac82b2ae398"
+    "image": ""
   },
   {
     "id": 40,
@@ -435,9 +435,9 @@
     "tag": "POPULAR",
     "type": "non-veg",
     "spice": 2,
-    "description": "Authentic Indian fish curry freshly prepared with traditional spices.",
+    "description": "Fresh fish simmered in a tangy, spiced curry with mustard and curry leaves for a coastal-style flavor.",
     "price": 160,
-    "image": "https://images.unsplash.com/photo-1603894584373-5ac82b2ae398"
+    "image": ""
   },
   {
     "id": 41,
@@ -446,9 +446,9 @@
     "tag": "POPULAR",
     "type": "non-veg",
     "spice": 2,
-    "description": "Authentic Indian mutton curry freshly prepared with traditional spices.",
+    "description": "Tender mutton pieces slow-cooked in a rich, spiced onion-tomato gravy until deeply flavorful and fall-off-the-bone soft.",
     "price": 300,
-    "image": "https://images.unsplash.com/photo-1603894584373-5ac82b2ae398"
+    "image": ""
   },
   {
     "id": 42,
@@ -457,9 +457,9 @@
     "tag": "POPULAR",
     "type": "veg",
     "spice": 1,
-    "description": "Authentic Indian veg biryani freshly prepared with traditional spices.",
+    "description": "Fragrant basmati rice layered with spiced mixed vegetables and slow-cooked in traditional dum style.",
     "price": 160,
-    "image": "https://images.unsplash.com/photo-1589302168068-964664d93dc0"
+    "image": ""
   },
   {
     "id": 43,
@@ -468,9 +468,9 @@
     "tag": "POPULAR",
     "type": "veg",
     "spice": 1,
-    "description": "Authentic Indian paneer biryani freshly prepared with traditional spices.",
+    "description": "Basmati rice layered with soft paneer cubes and aromatic biryani spices, cooked dum-style for maximum flavor.",
     "price": 180,
-    "image": "https://images.unsplash.com/photo-1589302168068-964664d93dc0"
+    "image": ""
   },
   {
     "id": 44,
@@ -479,9 +479,9 @@
     "tag": "POPULAR",
     "type": "non-veg",
     "spice": 2,
-    "description": "Authentic Indian chicken biryani freshly prepared with traditional spices.",
+    "description": "Fragrant basmati rice layered with marinated chicken and traditional biryani spices, slow-cooked to perfection.",
     "price": 200,
-    "image": "https://images.unsplash.com/photo-1589302168068-964664d93dc0"
+    "image": ""
   },
   {
     "id": 45,
@@ -490,9 +490,9 @@
     "tag": "POPULAR",
     "type": "non-veg",
     "spice": 2,
-    "description": "Authentic Indian mutton biryani freshly prepared with traditional spices.",
+    "description": "Basmati rice layered with tender marinated mutton and whole spices, slow-cooked dum-style for a rich, aromatic biryani.",
     "price": 280,
-    "image": "https://images.unsplash.com/photo-1589302168068-964664d93dc0"
+    "image": ""
   },
   {
     "id": 46,
@@ -501,9 +501,9 @@
     "tag": "POPULAR",
     "type": "veg",
     "spice": 1,
-    "description": "Authentic Indian samosa freshly prepared with traditional spices.",
+    "description": "A crisp, golden pastry pocket stuffed with spiced potatoes and peas - the ultimate teatime classic.",
     "price": 15,
-    "image": "https://images.unsplash.com/photo-1601050690597-df0568f70950"
+    "image": ""
   },
   {
     "id": 47,
@@ -512,9 +512,9 @@
     "tag": "POPULAR",
     "type": "non-veg",
     "spice": 2,
-    "description": "Authentic Indian chicken samosa freshly prepared with traditional spices.",
+    "description": "Crispy fried pastry filled with a spiced, shredded chicken filling for a savory, protein-packed snack.",
     "price": 20,
-    "image": "https://images.unsplash.com/photo-1601050690597-df0568f70950"
+    "image": ""
   },
   {
     "id": 48,
@@ -523,9 +523,9 @@
     "tag": "POPULAR",
     "type": "veg",
     "spice": 1,
-    "description": "Authentic Indian mini dry samosa (kg) freshly prepared with traditional spices.",
+    "description": "Bite-sized crispy samosas with a spiced dry filling, perfect for snacking by the handful.",
     "price": 300,
-    "image": "https://images.unsplash.com/photo-1601050690597-df0568f70950"
+    "image": ""
   },
   {
     "id": 49,
@@ -534,9 +534,9 @@
     "tag": "POPULAR",
     "type": "veg",
     "spice": 1,
-    "description": "Authentic Indian onion pakoda (10pc) freshly prepared with traditional spices.",
+    "description": "Thinly sliced onions dipped in spiced gram flour batter and deep-fried until golden and crunchy.",
     "price": 140,
-    "image": "https://images.unsplash.com/photo-1601050690597-df0568f70950"
+    "image": ""
   },
   {
     "id": 50,
@@ -545,9 +545,9 @@
     "tag": "POPULAR",
     "type": "veg",
     "spice": 1,
-    "description": "Authentic Indian paneer pakoda (10pc) freshly prepared with traditional spices.",
+    "description": "Soft paneer cubes coated in spiced gram flour batter and deep-fried to a crisp, golden finish.",
     "price": 180,
-    "image": "https://images.unsplash.com/photo-1601050690597-df0568f70950"
+    "image": ""
   },
   {
     "id": 51,
@@ -556,9 +556,9 @@
     "tag": "POPULAR",
     "type": "veg",
     "spice": 1,
-    "description": "Authentic Indian gobhi pakoda (10pc) freshly prepared with traditional spices.",
+    "description": "Fresh cauliflower florets coated in a spiced gram flour batter and deep-fried until crisp and golden.",
     "price": 120,
-    "image": "https://images.unsplash.com/photo-1601050690597-df0568f70950"
+    "image": ""
   },
   {
     "id": 52,
@@ -567,9 +567,9 @@
     "tag": "POPULAR",
     "type": "veg",
     "spice": 1,
-    "description": "Authentic Indian bread pakoda (2pc) freshly prepared with traditional spices.",
+    "description": "Bread slices stuffed with a spiced potato filling, dipped in batter and deep-fried until crisp.",
     "price": 60,
-    "image": "https://images.unsplash.com/photo-1601050690597-df0568f70950"
+    "image": ""
   },
   {
     "id": 53,
@@ -578,9 +578,9 @@
     "tag": "POPULAR",
     "type": "veg",
     "spice": 1,
-    "description": "Authentic Indian batata vada (10pc) freshly prepared with traditional spices.",
+    "description": "Spiced mashed potato dumplings coated in gram flour batter and deep-fried until golden - a Mumbai street food classic.",
     "price": 120,
-    "image": "https://images.unsplash.com/photo-1601050690597-df0568f70950"
+    "image": ""
   },
   {
     "id": 54,
@@ -589,9 +589,9 @@
     "tag": "POPULAR",
     "type": "veg",
     "spice": 1,
-    "description": "Authentic Indian veg momos freshly prepared with traditional spices.",
+    "description": "Steamed dumplings filled with finely chopped vegetables, served with a tangy accompanying chutney.",
     "price": 100,
-    "image": "https://images.unsplash.com/photo-1601050690597-df0568f70950"
+    "image": ""
   },
   {
     "id": 55,
@@ -600,9 +600,9 @@
     "tag": "POPULAR",
     "type": "veg",
     "spice": 1,
-    "description": "Authentic Indian fried momos freshly prepared with traditional spices.",
+    "description": "Steamed vegetable dumplings given a crisp, golden fry for extra texture and flavor.",
     "price": 120,
-    "image": "https://images.unsplash.com/photo-1601050690597-df0568f70950"
+    "image": ""
   },
   {
     "id": 56,
@@ -611,9 +611,9 @@
     "tag": "POPULAR",
     "type": "non-veg",
     "spice": 2,
-    "description": "Authentic Indian chicken momos freshly prepared with traditional spices.",
+    "description": "Steamed dumplings filled with seasoned minced chicken, served with a spicy dipping chutney.",
     "price": 120,
-    "image": "https://images.unsplash.com/photo-1601050690597-df0568f70950"
+    "image": ""
   },
   {
     "id": 57,
@@ -622,9 +622,9 @@
     "tag": "POPULAR",
     "type": "veg",
     "spice": 1,
-    "description": "Authentic Indian paani puri set freshly prepared with traditional spices.",
+    "description": "Crisp hollow puris served with spiced tangy water, tamarind chutney, and potato filling - an interactive street food favorite.",
     "price": 120,
-    "image": "https://images.unsplash.com/photo-1781243680771-1fea4521e196"
+    "image": ""
   },
   {
     "id": 58,
@@ -633,9 +633,9 @@
     "tag": "POPULAR",
     "type": "veg",
     "spice": 1,
-    "description": "Authentic Indian bread cutlet (10pc) freshly prepared with traditional spices.",
+    "description": "Crispy fried patties made from mashed potatoes and bread, lightly spiced and golden fried.",
     "price": 150,
-    "image": "https://images.unsplash.com/photo-1601050690597-df0568f70950"
+    "image": ""
   },
   {
     "id": 59,
@@ -644,9 +644,9 @@
     "tag": "POPULAR",
     "type": "veg",
     "spice": 1,
-    "description": "Authentic Indian moong daal kachori with chole freshly prepared with traditional spices.",
+    "description": "Crisp lentil-stuffed pastries served alongside a tangy, spiced chickpea curry - a beloved regional combo.",
     "price": 160,
-    "image": "https://images.unsplash.com/photo-1642821372719-46b426afd8b1"
+    "image": ""
   },
   {
     "id": 60,
@@ -655,9 +655,9 @@
     "tag": "POPULAR",
     "type": "veg",
     "spice": 1,
-    "description": "Authentic Indian daal baati chokha freshly prepared with traditional spices.",
+    "description": "Baked wheat dumplings served with spiced lentils and a smoky mashed potato-eggplant mix - a Rajasthani specialty.",
     "price": 160,
-    "image": "https://images.unsplash.com/photo-1642821372719-46b426afd8b1"
+    "image": ""
   },
   {
     "id": 61,
@@ -666,9 +666,9 @@
     "tag": "POPULAR",
     "type": "veg",
     "spice": 1,
-    "description": "Authentic Indian namak para (kg) freshly prepared with traditional spices.",
+    "description": "Crisp, savory diamond-cut crackers lightly spiced with carom seeds, sold by the kilo for snacking.",
     "price": 180,
-    "image": "https://images.unsplash.com/photo-1642821372719-46b426afd8b1"
+    "image": ""
   },
   {
     "id": 62,
@@ -677,9 +677,9 @@
     "tag": "POPULAR",
     "type": "veg",
     "spice": 1,
-    "description": "Authentic Indian mix namkeen (kg) freshly prepared with traditional spices.",
+    "description": "A crunchy blend of fried lentils, nuts, and spiced sev, perfect for snacking any time of day.",
     "price": 220,
-    "image": "https://images.unsplash.com/photo-1642821372719-46b426afd8b1"
+    "image": ""
   },
   {
     "id": 63,
@@ -688,9 +688,9 @@
     "tag": "POPULAR",
     "type": "veg",
     "spice": 1,
-    "description": "Authentic Indian chola samosa freshly prepared with traditional spices.",
+    "description": "Crispy fried pastry filled with spiced chickpeas, a hearty twist on the classic samosa.",
     "price": 90,
-    "image": "https://images.unsplash.com/photo-1642821372719-46b426afd8b1"
+    "image": ""
   },
   {
     "id": 64,
@@ -699,9 +699,9 @@
     "tag": "POPULAR",
     "type": "veg",
     "spice": 1,
-    "description": "Authentic Indian chole bhature freshly prepared with traditional spices.",
+    "description": "Fluffy deep-fried bread served with tangy spiced chickpea curry - a North Indian street food staple.",
     "price": 140,
-    "image": "https://images.unsplash.com/photo-1642821372719-46b426afd8b1"
+    "image": ""
   },
   {
     "id": 65,
@@ -710,9 +710,9 @@
     "tag": "POPULAR",
     "type": "veg",
     "spice": 1,
-    "description": "Authentic Indian paneer bhurji freshly prepared with traditional spices.",
+    "description": "Crumbled paneer sauteed with onions, tomatoes, and spices for a quick, protein-rich scramble.",
     "price": 140,
-    "image": "https://images.unsplash.com/photo-1642821372719-46b426afd8b1"
+    "image": ""
   },
   {
     "id": 66,
@@ -721,9 +721,9 @@
     "tag": "POPULAR",
     "type": "veg",
     "spice": 1,
-    "description": "Authentic Indian spring roll freshly prepared with traditional spices.",
+    "description": "Crisp fried rolls filled with shredded vegetables, an Indo-Chinese favorite served with a tangy dip.",
     "price": 120,
-    "image": "https://images.unsplash.com/photo-1642821372719-46b426afd8b1"
+    "image": ""
   },
   {
     "id": 67,
@@ -732,9 +732,9 @@
     "tag": "POPULAR",
     "type": "veg",
     "spice": 1,
-    "description": "Authentic Indian besan ke laddoo (kg) freshly prepared with traditional spices.",
+    "description": "Soft, melt-in-the-mouth roasted gram flour fudge balls, lightly sweetened and flavored with cardamom.",
     "price": 220,
-    "image": "https://images.unsplash.com/photo-1695568180070-8b5acead5cf4"
+    "image": ""
   },
   {
     "id": 68,
@@ -743,9 +743,9 @@
     "tag": "POPULAR",
     "type": "veg",
     "spice": 1,
-    "description": "Authentic Indian gajar ka halwa freshly prepared with traditional spices.",
+    "description": "Grated carrots slow-cooked in milk and sugar until thick and fudgy, finished with ghee and nuts.",
     "price": 80,
-    "image": "https://images.unsplash.com/photo-1517244683847-7456b63c5969"
+    "image": ""
   },
   {
     "id": 69,
@@ -754,9 +754,9 @@
     "tag": "POPULAR",
     "type": "veg",
     "spice": 1,
-    "description": "Authentic Indian kheer freshly prepared with traditional spices.",
+    "description": "Creamy rice pudding slow-simmered in milk with cardamom, and garnished with nuts.",
     "price": 80,
-    "image": "https://images.unsplash.com/photo-1695568180070-8b5acead5cf4"
+    "image": ""
   },
   {
     "id": 70,
@@ -765,9 +765,9 @@
     "tag": "POPULAR",
     "type": "veg",
     "spice": 1,
-    "description": "Authentic Indian gulaab jamun (kg) freshly prepared with traditional spices.",
+    "description": "Soft milk-solid dumplings deep-fried and soaked in fragrant sugar syrup - a classic Indian sweet.",
     "price": 260,
-    "image": "https://images.unsplash.com/photo-1695568180070-8b5acead5cf4"
+    "image": ""
   },
   {
     "id": 71,
@@ -776,9 +776,9 @@
     "tag": "POPULAR",
     "type": "veg",
     "spice": 1,
-    "description": "Authentic Indian khoya gujiya (10pc) freshly prepared with traditional spices.",
+    "description": "Crescent-shaped pastries filled with sweetened khoya and nuts, deep-fried until golden.",
     "price": 250,
-    "image": "https://images.unsplash.com/photo-1695568180070-8b5acead5cf4"
+    "image": ""
   },
   {
     "id": 72,
@@ -787,9 +787,9 @@
     "tag": "POPULAR",
     "type": "veg",
     "spice": 1,
-    "description": "Authentic Indian sooji gujiya (10pc) freshly prepared with traditional spices.",
+    "description": "Crescent-shaped pastries made with semolina dough and a sweet coconut-nut filling, deep-fried until crisp.",
     "price": 200,
-    "image": "https://images.unsplash.com/photo-1695568180070-8b5acead5cf4"
+    "image": ""
   },
   {
     "id": 73,
@@ -798,9 +798,9 @@
     "tag": "POPULAR",
     "type": "veg",
     "spice": 1,
-    "description": "Authentic Indian veg thali freshly prepared with traditional spices.",
+    "description": "A wholesome vegetarian platter with dal, sabzi, rice, roti, salad, and accompaniments for a complete meal experience.",
     "price": 150,
-    "image": "https://images.unsplash.com/photo-1546833999-b9f581a1996d"
+    "image": ""
   },
   {
     "id": 74,
@@ -809,8 +809,8 @@
     "tag": "POPULAR",
     "type": "non-veg",
     "spice": 2,
-    "description": "Authentic Indian non veg thali freshly prepared with traditional spices.",
+    "description": "A hearty non-vegetarian platter featuring a meat curry alongside dal, rice, roti, and traditional accompaniments.",
     "price": 180,
-    "image": "https://images.unsplash.com/photo-1546833999-b9f581a1996d"
+    "image": ""
   }
 ]
